@@ -3,6 +3,7 @@ def wert (n):
         return round (n,4)
     else:
         ee = str (n)
+        ee += "0" 
         while not(len ((str(ee)) [(int((str(ee)).find ('.'))+1):] ) >= 4):
             ee += "0" 
            # print (".")
