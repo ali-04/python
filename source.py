@@ -63,10 +63,8 @@ def calculate_sorted_averages (input_file_name, output_file_name):
 
 
     
-    
 
-
-#def calculate_three_best(input_file_name, output_file_name):
+def calculate_three_best(input_file_name, output_file_name):
     
 
 
