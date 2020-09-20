@@ -157,7 +157,7 @@ def calculate_average_of_averages(input_file_name, output_file_name):
     r.write (sss)
     r.close ()
     
-calculate_average_of_averages  (str(getcwd()+"\\"[0]+"1.csv"),str(getcwd()+"\\"[0]+"0.csv"))
+#calculate_average_of_averages  (str(getcwd()+"\\"[0]+"1.csv"),str(getcwd()+"\\"[0]+"0.csv"))
 
 
 
