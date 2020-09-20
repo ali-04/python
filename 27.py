@@ -21,8 +21,11 @@ def calculate_averages (input_file_name, output_file_name):
     for l in e: 
         #print (l)
         sss = (str(l[0])+","+str(l[1]))
-        r.write (sss+'''
+        if l != (e [len(e)-1]):
+            r.write (sss+'''
 ''')
+        else:
+            r.write (sss)
     r.close ()
 
     
@@ -54,8 +57,12 @@ def calculate_sorted_averages (input_file_name, output_file_name):
                     cc[lk] = nnnn
         for ol in cc :
             sss = (str(ol)+","+str(m[ol]))
+        if ol != cc [len(cc)-1]:
             r.write (sss+'''
 ''')
+        else:
+            r.write (sss)
+
     r.close ()
 
 
@@ -95,8 +102,11 @@ def calculate_three_best (input_file_name, output_file_name):
             sss.append  (str(ol)+","+str(m[ol]))
         for cma in range (0,3):
             cmb = 2 - cma
-            r.write (sss[cmb]+'''
+            if cma != 2:
+                r.write (sss[cmb]+'''
 ''')
+            else:
+                r.write (sss[cmb])
     r.close ()
 
     
@@ -129,8 +139,12 @@ def calculate_three_worst (input_file_name, output_file_name):
         for obe in range (0,3) :
             ol = cc [obe]
             sss = (str(m[ol]))
-            r.write (sss+'''
+            if obe != 2 :
+
+                r.write (sss+'''
 ''')
+            else :
+                r.write (sss)
     r.close ()
     
 
@@ -156,7 +170,10 @@ def calculate_average_of_averages(input_file_name, output_file_name):
     sss = (str(mean(ddd)))
     r.write (sss)
     r.close ()
-    
+
+
+
+
 #calculate_average_of_averages  (str(getcwd()+"\\"[0]+"1.csv"),str(getcwd()+"\\"[0]+"0.csv"))
 
 
