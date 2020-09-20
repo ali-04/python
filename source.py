@@ -139,8 +139,12 @@ def calculate_three_worst (input_file_name, output_file_name):
         for obe in range (0,3) :
             ol = cc [obe]
             sss = (str(m[ol]))
-            r.write (sss+'''
+            if obe != 2 :
+
+                r.write (sss+'''
 ''')
+            else :
+                r.write (sss)
     r.close ()
     
 
@@ -170,7 +174,7 @@ def calculate_average_of_averages(input_file_name, output_file_name):
 
 
 
-calculate_three_best  (str(getcwd()+"\\"[0]+"1.csv"),str(getcwd()+"\\"[0]+"0.csv"))
+#calculate_average_of_averages  (str(getcwd()+"\\"[0]+"1.csv"),str(getcwd()+"\\"[0]+"0.csv"))
 
 
 
