@@ -1,7 +1,7 @@
 from csv import reader
 #from Collections import OrderedDict
 from statistics import mean 
-#from os import getcwd
+from os import getcwd
 #print (getcwd()+"\\"[0]+"1.csv",getcwd()+"\\"[0]+"0.csv")
 
 def calculate_averages (input_file_name, output_file_name):
@@ -57,11 +57,11 @@ def calculate_sorted_averages (input_file_name, output_file_name):
                     cc[lk] = nnnn
         for ol in cc :
             sss = (str(ol)+","+str(m[ol]))
-        if ol != cc [len(cc)-1]:
-            r.write (sss+'''
+            if ol != cc [len(cc)-1]:
+                r.write (sss+'''
 ''')
-        else:
-            r.write (sss)
+            else:
+                r.write (sss)
 
     r.close ()
 
@@ -174,7 +174,7 @@ def calculate_average_of_averages(input_file_name, output_file_name):
 
 
 
-#calculate_average_of_averages  (str(getcwd()+"\\"[0]+"1.csv"),str(getcwd()+"\\"[0]+"0.csv"))
+calculate_average_of_averages  (str(getcwd()+"\\"[0]+"3.csv"),str(getcwd()+"\\"[0]+"0.csv"))
 
 
 
