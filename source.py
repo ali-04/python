@@ -174,7 +174,7 @@ def calculate_average_of_averages(input_file_name, output_file_name):
 
 
 
-calculate_average_of_averages  (str(getcwd()+"\\"[0]+"3.csv"),str(getcwd()+"\\"[0]+"0.csv"))
+#calculate_average_of_averages  (str(getcwd()+"\\"[0]+"3.csv"),str(getcwd()+"\\"[0]+"0.csv"))
 
 
 
