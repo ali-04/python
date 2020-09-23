@@ -1,7 +1,7 @@
 from csv import reader
 #from Collections import OrderedDict
 from statistics import mean 
-from os import getcwd
+#from os import getcwd
 #print (getcwd()+"\\"[0]+"1.csv",getcwd()+"\\"[0]+"0.csv")
 
 def calculate_averages (input_file_name, output_file_name):
