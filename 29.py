@@ -29,13 +29,16 @@ u = 0
 
 for ra in s :
     for ma in cc :
-        if ra % cc == 0 :
+        if ra % ma == 0 :
             x +=1
+        if ma > ra :
+            break
     if x > z :
         z = x
         u = ra 
     elif x == z and ra > u :
         u = ra 
+    x = 0
 
 print (u,z)
 
