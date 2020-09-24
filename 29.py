@@ -34,7 +34,7 @@ for ra in s :
     if x > z :
         z = x
         u = ra 
-    elif x = z and ra > u :
+    elif x == z and ra > u :
         u = ra 
 
 print (u,z)
