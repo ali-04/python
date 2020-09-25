@@ -33,14 +33,14 @@ def bar (a,b):
     
     
 def pr (j):
-    sss = v[j] + ' ' + "wins:" +  i[j] ['wins']  + ' , ' + "loses:" + i[j] ['loses'] + ' , ' + "draws:" + i[j] ['draws'] + ' , ' + "goal difference:" + i[j] ["goal difference"] + 'points:' + i[j] ['points']
+    sss = v[j] + ' ' + "wins:" +  str(i[j].get('wins',0))  + ' , ' + "loses:" + str(i[j].get('loses',0)) + ' , ' + "draws:" + str(i[j].get('draws',0)) + ' , ' + "goal difference:" + str(i[j].get('goal difference',0)) + 'points:' + str(i[j].get('points',0))
     print (sss)
 
 
 
 
 
-
+bar (0,1)
 bar (0,2)
 bar (0,3)
 bar (1,2)
