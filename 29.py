@@ -14,11 +14,11 @@ for d in s :
         s.remove(d)
 
 
-for k in range (2,z+1):
-    for t in range (2,k+1):
-        if k%t == 0 :
+for k in range (2,round(z/2)+2):
+    for t in range (2,round(k/2)+2):
+        if k%t == 0 and k != t :
             x += 1
-    if x == 1 :
+    if x == 0 :
         cc.append (k)
     x = 0
 
