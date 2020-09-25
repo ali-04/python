@@ -1,10 +1,10 @@
 i = list()
-i.append(dict())
-i.append(dict())
-i.append(dict())
-i.append(dict())
-v = ['Iran','Spain','portugal','morocco']
-
+i.append(dict({'name':'Iran'}))
+i.append(dict({'name':'Spain'}))
+i.append(dict({'name':'Portugal'}))
+i.append(dict({'name':'Morocco'}))
+v = ['Iran','Spain','Portugal','Morocco']
+tar = [0,1,2,3]
 
 def bar (a,b):
     
@@ -51,17 +51,26 @@ bar (2,3)
 
 
 
+for g1 in range(0,4):
+    for gg in range(0,4):
+        if  i [gg].get('points',0) < i [g1].get('points',0):
+            hhh = tar [g1]
+            tar [g1] = tar [gg]
+            tar [gg] = hhh
+        elif i [gg].get('points',0) == i [g1].get('points',0):
+            if i [gg].get('wins',0) < i [g1].get('wins',0):
+                hhh = tar [g1]
+                tar [g1] = tar [gg]
+                tar [gg] = hhh
+            elif i [gg].get('wins',0) == i [g1].get('wins',0) and i [gg].get('name') < i [g1].get('name') :
+                hhh = tar [g1]
+                tar [g1] = tar [gg]
+                tar [gg] = hhh
+                
 
 
-
-
-
-
-pr(1)
-pr(0)
-pr(2)
-pr(3)
-
-
+for f11 in range(0,4):
+    f12 = tar [f11]
+    pr(f12)
 
 
