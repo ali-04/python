@@ -52,17 +52,17 @@ bar (2,3)
 
 
 for g1 in range(0,4):
-    for gg in range(0,4):
-        if  i [gg].get('points',0) < i [g1].get('points',0):
+    for gg in range(g1,4):
+        if  i [tar[gg]].get('points',0) > i [tar[g1]].get('points',0):
             hhh = tar [g1]
             tar [g1] = tar [gg]
             tar [gg] = hhh
-        elif i [gg].get('points',0) == i [g1].get('points',0):
-            if i [gg].get('wins',0) < i [g1].get('wins',0):
+        elif i [tar[gg]].get('points',0) == i [tar[g1]].get('points',0):
+            if i [tar[gg]].get('wins',0) > i [tar[g1]].get('wins',0):
                 hhh = tar [g1]
                 tar [g1] = tar [gg]
                 tar [gg] = hhh
-            elif i [gg].get('wins',0) == i [g1].get('wins',0) and i [gg].get('name') < i [g1].get('name') :
+            elif i [tar[gg]].get('wins',0) == i [tar[g1]].get('wins',0) and i [tar[gg]].get('name') < i [tar[g1]].get('name') :
                 hhh = tar [g1]
                 tar [g1] = tar [gg]
                 tar [gg] = hhh
