@@ -12,12 +12,12 @@ for w in range (0,o):
 
 
 for x in range (0,6):
-    for y in range (0,6):
-        if da [u[y]] < da [u[x]]:
+    for y in range (x,6):
+        if da [u[y]] > da [u[x]]:
             fff = u[y]
             u[y] = u[x]
             u[x] = fff
-        elif da [u[y]] == da [u[x]] and u[y] > u[y] :
+        elif da [u[y]] == da [u[x]] and u[y] < u[x] :
             fff = u[y]
             u[y] = u[x]
             u[x] = fff
