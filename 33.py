@@ -22,5 +22,5 @@ for gg in range(0,len(j)):
     else :
         eee = eee[:len(eee)-1]
         print (eee)
-
-
+if j == []:
+    print ('None')
