@@ -1,6 +1,6 @@
 import hashlib
 import csv
-#from os import getcwd
+from os import getcwd
 
 def hash_password_hack(input_file_name, output_file_name):
     r = open (output_file_name,"w")
@@ -42,4 +42,4 @@ def hash_password_hack(input_file_name, output_file_name):
     r.close
 
 
-#hash_password_hack  (str(getcwd()+"\\"[0]+"1.csv"),str(getcwd()+"\\"[0]+"0.csv"))
+hash_password_hack  (str(getcwd()+"\\"[0]+"1.csv"),str(getcwd()+"\\"[0]+"0.csv"))
